@@ -200,7 +200,7 @@ jobs:
           Compress-Archive -Path "$Env:output_bin" -DestinationPath "plugin_${Env:tar_names}.zip" -CompressionLevel Optimal
           ls "plugin_${Env:tar_names}.zip"
       - name: Upload artifact - wasi_nn-ggml
-        uses: actions/upload-artifact@b7c566a772e6b6bfb58ed0dc250532a479d7789f # v6.0.0
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
         with:
           name: WasmEdge-plugin-wasi_nn-ggml-${{ needs.get_version.outputs.version }}-windows.zip
           path: plugin_wasi_nn-ggml.zip
